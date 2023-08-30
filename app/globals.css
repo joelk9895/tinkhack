@@ -39,7 +39,24 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 }
-
+@font-face {
+  font-family: "SansFrancisco";
+  src: url('./snfsco.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fancy";
+  src: url('./fancy.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NeoPixel";
+  src: url('./neopixel.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;

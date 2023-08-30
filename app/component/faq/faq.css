@@ -1,0 +1,15 @@
+.faqCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+}
+.faqCard h3{
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'Poppins';
+}

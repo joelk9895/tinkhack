@@ -8,10 +8,12 @@
     padding: 2rem 3rem;
     border-radius: 1rem;
     min-height: 550px;
+    color: black;
 }
 .faqCard h3{
     width: 100%;
     text-align: left;
     font-size: 2rem;
     font-family: 'Poppins';
+    color: black;
 }

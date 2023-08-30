@@ -24,8 +24,8 @@ export default function TextSplit() {
       scrollTrigger: {
         trigger: container.current!,
         scrub: true,
-        start: `30% bottom`,
-        end: `40% center`,
+        start: `10% bottom`,
+        end: `40% bottom`,
       },
       opacity: 1,
       ease: "none",

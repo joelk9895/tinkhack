@@ -1,6 +1,7 @@
 import FaqCards from './component/faq/FaqCards';
 import TextSplit from './component/text';
 import './page.css';
+import {FAQ} from  './faq'
 
 export default function Home() {
   return (
@@ -35,47 +36,47 @@ export default function Home() {
         </div>
         <a href="#" className='register'>Register</a>
         <p className='badge'>TinkerhubMEC</p>
-        <p className='date'>13 September 2023</p>
+        <p className='date'>16 September 2023</p>
  
       </section>
       <section className="second">
         <h2>What is TinkHack?</h2>
         <TextSplit />
         <p className='badge2'>TinkerhubMEC</p>
-        <p className='date2'>13 September 2023</p>
+        <p className='date2'>16 September 2023</p>
         <div className="marquee">
 <div className='marquee-content'>
       <p>TinkerhubMEC</p>
-      <p>13 September 2023</p>
+      <p>16 September 2023</p>
       <p>🤩</p>
       <p>TinkerhubMEC</p>
-      <p>13 September 2023</p>
+      <p>16 September 2023</p>
       <p>✨</p>
       <p>TinkerhubMEC</p>
-      <p>13 September 2023</p>
+      <p>16 September 2023</p>
       <p>😎</p>
       <p>TinkerhubMEC</p>
-      <p>13 September 2023</p>
+      <p>16 September 2023</p>
       <p>🥳</p>
       <p>TinkerhubMEC</p>
-      <p>13 September 2023</p>
+      <p>16 September 2023</p>
       <p>🙌</p>
     </div>
     <div className='marquee-content'>
     <p>TinkerhubMEC</p>
-      <p>13 September 2023</p>
+      <p>16 September 2023</p>
       <p>🤩</p>
       <p>TinkerhubMEC</p>
-      <p>13 September 2023</p>
+      <p>16 September 2023</p>
       <p>✨</p>
       <p>TinkerhubMEC</p>
-      <p>13 September 2023</p>
+      <p>16 September 2023</p>
       <p>😎</p>
       <p>TinkerhubMEC</p>
-      <p>13 September 2023</p>
+      <p>16 September 2023</p>
       <p>🥳</p>
       <p>TinkerhubMEC</p>
-      <p>13 September 2023</p>
+      <p>16 September 2023</p>
       <p>🙌</p>
      
     </div>
@@ -106,14 +107,17 @@ export default function Home() {
       <section className="fifth">
         <h2>FAQ</h2>
         <div className="faqHolder">
-        <FaqCards/>
-        <FaqCards/>
-        <FaqCards/>
-        <FaqCards/>
-        <FaqCards/>
-        <FaqCards/>
-        <FaqCards/>
-        <FaqCards/>
+          {
+            FAQ.map((item, index) => {
+              return (
+                <FaqCards
+                  head={item.question}
+                  descp={item.answer}
+                  key={index}
+                />
+              )
+            })
+            }
         </div>
       </section>
     </main>

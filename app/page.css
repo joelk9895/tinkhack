@@ -267,6 +267,8 @@ text {
     font-size: 5rem;
     font-family: 'SansFrancisco';
     color: black;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 .faqHolder{
     display: flex;
@@ -276,6 +278,7 @@ text {
     gap: 1rem;
     width: 100%;
     height: 100%;
+    margin-bottom: 10%;
 }
 
 @media (max-width: 1000px) {
@@ -298,6 +301,10 @@ text {
     .third h2{
         font-size: 3rem;
     }
+    .second h2{
+        width: 100%;
+        text-align: center;
+    }
     .third p{
         font-size: 2.5rem;
     }
@@ -306,5 +313,39 @@ text {
     }
     .fifth h2{
         font-size: 3rem;
+    }
+    .date2{
+        bottom: 30%;
+        left: -70px;
+    }
+    .faqCard{
+        min-height: fit-content;
+    }
+}
+@media (max-width: 600px) {
+    .first{
+        width: 99vw;
+    }
+    .date{
+        top: 20%;
+        right: -90px;
+    }
+    .badge{
+        left: -40px;
+    }
+    .second{
+        width: 99vw;
+    }
+    .date2{
+        bottom: 20%;
+        left: -70px;
+    }
+    .badge2{
+        top: 20%;
+        right: -40px;
+    }
+    .second h2{
+        width: 100%;
+        text-align: center;
     }
 }

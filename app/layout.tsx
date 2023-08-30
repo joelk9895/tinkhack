@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'TinkHack',
   description: 'Kerala\'s first ever Gen AI Hackathon',
+  themeColor: 'black',
 }
 
 export default function RootLayout({

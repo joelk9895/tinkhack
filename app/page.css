@@ -149,7 +149,7 @@ text {
     font-size: 1.5rem;
     font-family: 'NeoPixel';
     color: white;
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
     position: absolute;
     text-transform: lowercase;
     left: 0;

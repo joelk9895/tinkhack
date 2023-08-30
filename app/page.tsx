@@ -25,7 +25,7 @@ export default function Home() {
             />
             <text fill='#21FF21'>
               <textPath href="#circlePath">
-                Kerala's first ever Gen AI Hackathon
+                Kerala&apos;s first ever Gen AI Hackathon
               </textPath>
             </text>
           </svg>

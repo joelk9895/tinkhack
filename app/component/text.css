@@ -21,10 +21,17 @@
 
 .body span{
     opacity: 0;
+    font-size: 2rem;
 }
 @media (max-width: 1000px) {
+    .body{
+        width: 80vw;
+    }
     .body p {
-        font-size: 0.7rem;
+        font-size: 1rem;
+    }
+    .body span{
+        font-size: 1.5rem;
     }
 }
     

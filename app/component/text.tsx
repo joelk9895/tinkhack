@@ -24,7 +24,6 @@ export default function TextSplit() {
       scrollTrigger: {
         trigger: container.current!,
         scrub: true,
-        markers: true,
         start: `500vh top`,
         end: window.innerWidth<1000?`1000vh 20%`:`40% bottom`,
       },

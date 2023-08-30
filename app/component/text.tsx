@@ -50,7 +50,7 @@ export default function TextSplit() {
         start: `30% bottom`,
         end: `40% center`,
       },
-      background: "#21FF21",
+      background: "linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39))",
       ease: "none",
       stagger: 0.1
     });

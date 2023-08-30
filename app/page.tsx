@@ -9,8 +9,8 @@ export default function Home() {
       <section className='first'>
         <h1>
           <span className='tink'>TINK</span>
-          <br />
-         <span className='hack'> Hack
+          {/* <br /> */}
+         <span className='hack'>Hack
           <svg
             viewBox="0 0 100 100"
             xmlns="http://www.w3.org/2000/svg"
@@ -85,12 +85,12 @@ export default function Home() {
       <section className="third">
         <h2>Prize pool</h2>
        <div className="prizeHolder">
-       <p className='amt'>1Lakhs</p>
+       <p className='amt'>Coming...</p>
         <p className='mind'>🤯</p>
        </div>
    
       </section>
-      <section className="fourth">
+      {/* <section className="fourth">
         <h2>Sponsors</h2>
         <div className="sponsorsHolder">
         <p>Google</p>
@@ -103,7 +103,7 @@ export default function Home() {
         <p>Google</p>
         </div>
 
-      </section>
+      </section> */}
       <section className="fifth">
         <h2>FAQ</h2>
         <div className="faqHolder">

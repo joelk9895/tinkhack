@@ -3,8 +3,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: black;
+    background-image: radial-gradient(farthest-side at bottom left, #0f4f1757, transparent 400px), radial-gradient(farthest-corner at bottom right, #4820519b, transparent 800px), radial-gradient(farthest-side at top left, #27235aa9, transparent 900px), radial-gradient(farthest-corner at top right, #1d184dac, transparent 900px);
+    background-size: 100px 100px;
+    background-image:
+    linear-gradient(to right, #d4d4d432 1px, transparent 1px),
+    linear-gradient(to bottom, #d4d4d431 1px, transparent 1px);
+
 }
+
 .marquee {
     --gap: 0.01rem;
     display: flex;
@@ -13,12 +19,12 @@
     gap: var(--gap);
     position: absolute;
     bottom: 0;
-    background:black;
+    background: black;
     padding-bottom: 10px;
     transform: rotate(-1deg);
-  }
-  
-  .marquee-content {
+}
+
+.marquee-content {
     flex-shrink: 0;
     display: flex;
     justify-content: space-around;
@@ -26,22 +32,26 @@
     min-width: 100%;
     gap: var(--gap);
     animation: scroll 20s infinite linear;
-  }
-  .marquee p{
+}
+
+.marquee p {
     font-weight: 900;
     font-size: 1rem;
     letter-spacing: -1px;
     text-transform: lowercase;
     color: white;
-  }
-  @keyframes scroll {
+}
+
+@keyframes scroll {
     from {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     to {
-      transform: translateX(calc(-100% - var(--gap)));
+        transform: translateX(calc(-100% - var(--gap)));
     }
-  }
+}
+
 .first {
     display: flex;
     height: 100vh;
@@ -60,7 +70,7 @@
 }
 
 .tink {
-    font-size: 5rem;
+    font-size: 15rem;
     color: transparent;
     font-family: 'SansFrancisco';
     text-align: center;
@@ -107,14 +117,15 @@ text {
 
 .badge {
     font-size: 1.5rem;
-    font-family: 'SansFrancisco';
+    font-family: 'Poppins' , sans-serif;
     color: white;
     transform: rotate(-90deg);
     position: absolute;
-    text-transform: lowercase;
+    text-transform: capitalize;
     left: 0;
     bottom: 15%;
 }
+
 .badge2 {
     font-size: 1.5rem;
     font-family: 'SansFrancisco';
@@ -145,6 +156,7 @@ text {
     right: 0;
     top: 15%;
 }
+
 .date2 {
     font-size: 1.5rem;
     font-family: 'NeoPixel';
@@ -186,9 +198,9 @@ text {
     align-items: center;
     justify-content: center;
     border-radius: 2rem 2rem 0 0;
-    position:sticky;
-    top:0;
-    left:0;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .third h2 {
@@ -219,7 +231,8 @@ text {
     opacity: 0;
     font-size: 10rem;
 }
-.amt{
+
+.amt {
     font-size: 7rem;
     font-family: 'Poppins';
     font-weight: 700;
@@ -228,6 +241,7 @@ text {
     padding: 2rem;
     transform: skew(-10deg);
 }
+
 .fourth {
     height: 100vh;
     width: 100%;
@@ -239,7 +253,8 @@ text {
     justify-content: center;
     border-radius: 2rem 2rem 0 0;
 }
-.fourth h2{
+
+.fourth h2 {
     font-size: 5rem;
     font-family: 'SansFrancisco';
     text-transform: capitalize;
@@ -248,7 +263,8 @@ text {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.sponsorsHolder{
+
+.sponsorsHolder {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -258,21 +274,24 @@ text {
     gap: 2rem;
     font-size: 2rem;
 }
-.fifth{
+
+.fifth {
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.fifth h2{
+
+.fifth h2 {
     font-size: 5rem;
     font-family: 'SansFrancisco';
     color: black;
     margin-top: 10%;
     margin-bottom: 5%;
 }
-.faqHolder{
+
+.faqHolder {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -284,69 +303,87 @@ text {
 }
 
 @media (max-width: 1000px) {
-    .tink{
+    .tink {
         font-size: 3rem;
     }
+
     .first h1 {
         font-size: 5rem;
-        
+
     }
-    .second h2{
+
+    .second h2 {
         font-size: 3rem;
     }
+
     .body p {
         font-size: 1.5rem;
     }
-    .body span{
+
+    .body span {
         opacity: 0.1;
     }
-    .third h2{
+
+    .third h2 {
         font-size: 3rem;
     }
-    .second h2{
+
+    .second h2 {
         width: 100%;
         text-align: center;
     }
-    .third p{
+
+    .third p {
         font-size: 2.5rem;
     }
-    .fourth h2{
+
+    .fourth h2 {
         font-size: 3rem;
     }
-    .fifth h2{
+
+    .fifth h2 {
         font-size: 3rem;
     }
-    .date2{
+
+    .date2 {
         bottom: 30%;
         left: -70px;
     }
-    .faqCard{
+
+    .faqCard {
         min-height: fit-content;
     }
 }
+
 @media (max-width: 600px) {
-    .first{
+    .first {
         width: 99vw;
     }
-    .date{
+
+    .date {
         top: 20%;
         right: -90px;
     }
-    .badge{
+
+    .badge {
         left: -40px;
     }
-    .second{
+
+    .second {
         width: 99vw;
     }
-    .date2{
+
+    .date2 {
         bottom: 20%;
         left: -70px;
     }
-    .badge2{
+
+    .badge2 {
         top: 20%;
         right: -40px;
     }
-    .second h2{
+
+    .second h2 {
         width: 100%;
         text-align: center;
     }

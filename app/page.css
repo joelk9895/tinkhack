@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: radial-gradient(farthest-side at bottom left, #0f4f1757, transparent 400px), radial-gradient(farthest-corner at bottom right, #4820519b, transparent 800px), radial-gradient(farthest-side at top left, #27235aa9, transparent 900px), radial-gradient(farthest-corner at top right, #1d184dac, transparent 900px);
+    background: black;
     background-size: 100px 100px;
     background-image:
     linear-gradient(to right, #d4d4d432 1px, transparent 1px),
@@ -304,11 +304,11 @@ text {
 
 @media (max-width: 1000px) {
     .tink {
-        font-size: 5rem;
+        font-size: 4rem;
     }
 
     .first h1 {
-        font-size: 5rem;
+        font-size: 4rem;
 
     }
 

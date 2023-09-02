@@ -120,14 +120,16 @@ export default function Home() {
         <section className="fourth">
           <h2>Sponsors</h2>
           <div className="sponsorsHolder">
-            <p>Google</p>
+            {/* <p>Google</p>
             <p>Meta</p>
             <p>TinkerHub Foundation</p>
             <p>OpenAI</p>
             <p>Amazon</p>
             <p>Repl.it</p>
             <p>Google</p>
-            <p>Google</p>
+            <p>Google</p> */}
+            <p>Coming...</p>
+            <p>Reach out to us if you would like to sponsor</p>
           </div>
 
         </section>

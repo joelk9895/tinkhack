@@ -47,11 +47,32 @@ export default function TextSplit() {
       scrollTrigger: {
         trigger: ".third",
         scrub: true,
-        start: `30% bottom`,
-        end: `40% center`,
+        start: `30% 51%`,
+        end: `32% center`,
       },
-      background: "linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39))",
-      ease: "none",
+      opacity: 1,
+      backgroundImage: `radial-gradient(
+        213% 213% at 5% -9%,
+        rgba(38, 134, 190, 0.3) 0px,
+        rgba(38, 133, 189, 0.3) 8.6%,
+        rgba(37, 130, 185, 0.1) 16.6%,
+        rgba(36, 126, 178, 0.1) 23.9%,
+        rgba(34, 120, 170, 0.08) 30.9%,
+        rgba(32, 113, 160, 0.07) 37.4%,
+        rgba(30, 104, 148, 0.06) 43.8%,
+        rgba(27, 95, 134, 0.05) 50%,
+        rgba(24, 84, 119, 0.04) 56.2%,
+        rgba(21, 72, 103, 0.03) 62.6%,
+        rgba(17, 60, 85, 0.02) 69.2%,
+        rgba(13, 46, 65, 0.01) 76.1%,
+        transparent 100%
+      ),
+      radial-gradient(
+        150% 150% at 3% -45%,
+        rgba(255, 255, 255, 0.08) 0px,
+        rgba(255, 255, 255, 0) 100%
+      )`,
+      ease: "cube.out",
       stagger: 0.1
     });
   };

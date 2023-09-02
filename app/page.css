@@ -399,6 +399,9 @@ text {
     .faqCard {
         min-height: fit-content;
     }
+    nav{
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -433,4 +436,5 @@ text {
         width: 100%;
         text-align: center;
     }
+  
 }

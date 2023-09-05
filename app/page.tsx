@@ -46,65 +46,65 @@ export default function Home() {
           </div>
           <a href="#" className='register'>Register</a>
           <p className='badge'>TinkerhubMEC</p>
-          <p className='date'>16 September 2023</p>
+          <p className='date'>4 November 2023</p>
 
         </section>
         <section className="second" id='about'>
           <h2>What is TinkHack?</h2>
           <TextSplit />
           <p className='badge2'>TinkerhubMEC</p>
-          <p className='date2'>16 September 2023</p>
+          <p className='date2'>4 November 2023</p>
           <div className="marquee">
             <div className='marquee-content'>
               <p>TinkerhubMEC</p>
               <p>🤘</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>🤩</p>
               <p>TinkerhubMEC</p>
               <p>✨</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>😎</p>
               <p>TinkerhubMEC</p>
               <p>🥳</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>🙌</p>
               <p>TinkerhubMEC</p>
               <p>🎉</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>🚀</p>
               <p>TinkerhubMEC</p>
               <p>🌟</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>💡</p>
               <p>TinkerhubMEC</p>
               <p>🎈</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>🌈</p>
             </div>
             <div className='marquee-content'>
             <p>TinkerhubMEC</p>
               <p>🤘</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>🤩</p>
               <p>TinkerhubMEC</p>
               <p>✨</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>😎</p>
               <p>TinkerhubMEC</p>
               <p>🥳</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>🙌</p>
               <p>TinkerhubMEC</p>
               <p>🎉</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>🚀</p>
               <p>TinkerhubMEC</p>
               <p>🌟</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>💡</p>
               <p>TinkerhubMEC</p>
               <p>🎈</p>
-              <p>16 September 2023</p>
+              <p>4 November 2023</p>
               <p>🌈</p>
             </div>
           </div>

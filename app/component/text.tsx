@@ -1,10 +1,11 @@
-"use client"
-import React, { useRef, useEffect } from 'react';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import gsap from 'gsap';
-import './text.css';
+"use client";
+import React, { useRef, useEffect, use } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+import "./text.css";
 
-const phrase = "TinkHack is an exhilarating hackathon uniting imaginative minds and coding enthusiasts to delve into the world of Generative AI. Showcase skills, unleash creativity, and innovate using state-of-the-art AI. Kerala's inaugural AI hackathon code, innovate, and make your mark on Tinkhack's neural network!";
+const phrase =
+  "PyCon Mumbai is a premier Python conference in Mumbai, bringing together Python enthusiasts, developers, data scientists, and industry experts from across the region. This event serves as a vibrant platform for sharing knowledge, best practices, and innovations within the Python ecosystem. Attendees can expect a range of activities including engaging talks, hands-on workshops, insightful panel discussions, and networking opportunities. Whether you're a seasoned Python developer or a beginner, PyCon Mumbai offers something for everyone, fostering collaboration, learning, and the advancement of Python in India's tech community.";
 
 export default function TextSplit() {
   const refs = useRef<Array<HTMLSpanElement | null>>([]);
@@ -12,9 +13,63 @@ export default function TextSplit() {
   const container = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
+    const animation = gsap.timeline().fromTo(
+      "h1",
+      {
+        y: "110%",
+      },
+      {
+        y: "0%",
+        duration: 0.6,
+        delay: 0,
+      }
+    );
+
+    return () => {
+      animation.kill();
+    };
+  }, []);
+  useEffect(() => {
+    const animation = gsap.timeline().fromTo(
+      "h1",
+      {
+        rotationX: 50,
+      },
+      {
+        rotationX: 0,
+        duration: 0.6,
+        delay: 0.3,
+        ease: "power2.out",
+      }
+    );
+
+    return () => {
+      animation.kill();
+    };
+  }, []);
+  useEffect(() => {
+    const animation = gsap.timeline().fromTo(
+      ".titleanim",
+      {
+        y: "1%",
+      },
+      {
+        y: "0%",
+        duration: 0.6,
+        delay: 0.3,
+        ease: "power2.out",
+      }
+    );
+
+    return () => {
+      animation.kill();
+    };
+  }, []);
+
+  useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.defaults({
-        toggleActions: "play none none reverse"
+      toggleActions: "play none none reverse",
     });
     createAnimation();
   }, []);
@@ -25,19 +80,18 @@ export default function TextSplit() {
         trigger: container.current!,
         scrub: true,
         start: `500vh top`,
-        end: window.innerWidth<1000?`1000vh 20%`:`40% bottom`,
+        end: window.innerWidth < 1000 ? `1000vh 20%` : `40% bottom`,
       },
       opacity: 1,
       ease: "none",
-      stagger: 0.1
+      stagger: 0.1,
     });
   };
-
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.defaults({
-        toggleActions: "play none none reverse"
+      toggleActions: "play none none reverse",
     });
     createAnimation2();
   }, []);
@@ -73,17 +127,14 @@ export default function TextSplit() {
         rgba(255, 255, 255, 0) 100%
       )`,
       ease: "cube.out",
-      stagger: 0.1
+      stagger: 0.1,
     });
   };
-
-
-
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     ScrollTrigger.defaults({
-        toggleActions: "play none none reverse"
+      toggleActions: "play none none reverse",
     });
     createAnimation3();
     createAnimation4();
@@ -98,8 +149,8 @@ export default function TextSplit() {
         start: `20% top`,
         end: `10% top`,
       },
-        opacity: 0,
-        ease: "power2.out",
+      opacity: 0,
+      ease: "power2.out",
     });
   };
 
@@ -142,7 +193,7 @@ export default function TextSplit() {
   };
 
   return (
-    <div ref={body} className='body'>
+    <div ref={body} className="body">
       {splitWords(phrase)}
     </div>
   );

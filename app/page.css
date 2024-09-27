@@ -99,6 +99,7 @@ ul {
     font-family: 'Fancy';
     text-align: center;
     text-transform: uppercase;
+    transform-origin: "50% 50%";
 }
 
 .tink {
@@ -157,7 +158,8 @@ text {
     left: 0;
     bottom: 15%;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,8 +167,15 @@ text {
     background-image:
         linear-gradient(to right, #d4d4d432 1px, transparent 1px),
         linear-gradient(to bottom, #d4d4d431 1px, transparent 1px);
-  opacity: 1;
+    opacity: 1;
 }
+
+.titleanim {
+    height: fit-content;
+    overflow: hidden;
+    width: 100%;
+}
+
 .badge2 {
     font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
@@ -399,7 +408,8 @@ text {
     .faqCard {
         min-height: fit-content;
     }
-    nav{
+
+    nav {
         display: none;
     }
 }
@@ -436,5 +446,5 @@ text {
         width: 100%;
         text-align: center;
     }
-  
+
 }
